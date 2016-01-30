@@ -1,0 +1,82 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background: #517fa4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #517fa4, #243949); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #517fa4, #243949); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #517fa4, #243949); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #517fa4, #243949); /* Standard syntax */
+}
+
+.profile .photo {
+    text-align: center;
+    padding-top: 8%;
+}
+
+.profile .photo img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border: 10px solid rgba(255, 255, 255, 1);
+}
+
+.profile .description {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.profile .description .name {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.profile .description p .job {
+    font-size: 21px;
+    font-weight: 100;
+    display: block;
+    color: #fb0;
+}
+
+.profile .description p .degree {
+    font-size: 16px;
+}
+
+.profile .description .email {
+    padding-top: 10px;
+    color: #fb0;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.profile .social-network {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social-icon {
+    height: 30px;
+    width: 30px;
+    left: 0;
+    top: 0;
+}
+
+.icon {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.social-icon .background-shape {
+    opacity: 0;
+}
+
+.social-icon .inner-shape {
+    opacity:1;
+}
+
+.social-icon path {
+    fill:#fff;
+}
+
+.social-icon:hover path {
+    fill: #fc0;
+}

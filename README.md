@@ -1,2 +1,2 @@
 # joaopcanario.github.io
-Personal page
+My personal page on http://joaopcanario.github.io
