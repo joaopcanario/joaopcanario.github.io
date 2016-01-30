@@ -1,2 +1,4 @@
 # joaopcanario.github.io
-My personal page on http://joaopcanario.github.io
+My personal page
+
+## UNDER CONSTRUCTION
