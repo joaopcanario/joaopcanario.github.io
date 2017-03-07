@@ -53,35 +53,21 @@ body {
     font-size: 15px;
 }
 
-.profile .social-network {
+.profile .social {
     padding-top: 30px;
     text-align: center;
 }
 
-.social-icon {
-    height: 30px;
-    width: 30px;
-    left: 0;
-    top: 0;
-}
-
 .icon {
-    padding-left: 10px;
+    height: 50px;
+    width: 55px;
     display: inline-block;
 }
 
-.social-icon .background-shape {
-    opacity: 0;
+.fa {
+    color:#fff;
 }
 
-.social-icon .inner-shape {
-    opacity:1;
-}
-
-.social-icon path {
-    fill:#fff;
-}
-
-.social-icon:hover path {
-    fill: #fb0;
+.fa:hover {
+    color: #fb0;
 }
