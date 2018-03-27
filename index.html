@@ -1,113 +1,210 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="rWCZ2n3gh8D8uCDLCPVss50dR3RJQjErmZWjfm5J0AU" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Software Engineering and PhD Student in Computer Science at 
-Federal University of Bahia. Salvador, Brazil">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google-site-verification" content="rWCZ2n3gh8D8uCDLCPVss50dR3RJQjErmZWjfm5J0AU" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Software Engineering and PhD Student in Computer Science at 
+  Federal University of Bahia. Salvador, Brazil">
 
-    <meta property="og:title" content="João Paulo Canário (Jopa)">
-    <meta property="og:type" content="profile">
-    <meta property="og:url" content="http://joaopcanario.github.io">
-    <meta property="og:image" content="http://joaopcanario.github.io/img/me.jpg">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:site_name" content="My personal page">
+  <meta property="og:title" content="João Paulo Canário (Jopa)">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="http://joaopcanario.github.io">
+  <meta property="og:image" content="http://joaopcanario.github.io/img/me.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="My personal page">
 
-    <title>João Paulo Canário (Jopa)</title>
+  <title>João Paulo Canário (Jopa)</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" >
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="profile">
-        <div class="photo">
-            <img src="assets/img/me.jpg" alt="" itemprop="image">
-        </div>
-        <div class="description">
-            <span class="name" itemprop="name">João Paulo Canário</span>
-            <div>
-                <span class="job" itemprop="jobTitle">Software Engineer</span>
-                <span class="degree" itemprop="degreeTitle">PhD Student in Computer Science at Federal University of Bahia</span>
-            </div>
-            <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span class="location" itemprop="addressLocality">Salvador</span>,
-                <span class="location" itemprop="addressRegion">Bahia</span>,
-                <span class="location" itemprop="addressCountry">Brazil</span>
-            </div>
-            <br>
-            <a id="email" href="mailto:jopacanario@gmail.com" class="email" itemprop="email">jopacanario@gmail.com</a>
-            <br>
-            <span class="phone" itemprop="phone">+55 71 999538382</span>
-        </div>
-        <div id="app">
-          {{ message }}
-        </div>
-        <div class="social">
-            <div class="icon">
-                <a itemprop="sameAs" target="_blank" href="https://medium.com/@joaopcanario">
-                    <i class="fa fa-medium fa-3x" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a itemprop="sameAs"  target="_blank" href="https://www.github.com/joaopcanario">
-                    <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a itemprop="sameAs"  target="_blank" href="https://www.twitter.com/joaopcanario">
-                    <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a itemprop="sameAs"  target="_blank" href="https://www.facebook.com/joaopcanario">
-                    <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
-                </a>
-            </div>
-            <p></p>
-            <div class="icon">
-                <a itemprop="sameAs"  target="_blank" href="https://plus.google.com/u/0/+Jo%C3%A3oPauloCan%C3%A1rio">
-                    <i class="fa fa-google-plus-official fa-3x" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a itemprop="sameAs"  target="_blank" href="https://br.linkedin.com/in/joaopcanario">
-                    <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a itemprop="sameAs" target="_blank" href="https://www.instagram.com/joaopcanario">
-                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a itemprop="sameAs" target="_blank" onclick="Skype.tryAnalyzeSkypeUri('chat', '0');" href="skype:jpcanario?chat" />
-                    <i class="fa fa-skype fa-3x" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/brand/new-brand.svg" class="d-inline-block align-top">
+      </a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a id="nav-about" class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a id="nav-skills" class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a id="nav-projects" class="nav-link" href="#projects">Projects</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <header id="profile">
+    <div class="header-content">
+      <div class="header-content-inner">
+        <div class="photo">
+          <img src="assets/img/me.jpg" alt="" itemprop="image">
+        </div>
+        <div class="profile">
+          <div class="description">
+            <h1><span class="name" itemprop="name">Hello,<br>I'm João Paulo Canário!</span></h1>
+            <span class="job" itemprop="jobTitle">Software Developer</span>
+            <hr>
+            <span class="degree" itemprop="degreeTitle">PhD Student in Computer Science at Federal University of Bahia</span>
+            <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="location" itemprop="addressLocality">Salvador</span>,
+              <span class="location" itemprop="addressRegion">Bahia</span>,
+              <span class="location" itemprop="addressCountry">Brazil</span>
+            </div>
+            <br>
+            <a class="btn-orange page-scroll" href="#contact"><span>Let's get in touch</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="about">
+    <div class="about">
+      <h2>About me</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non felis porttitor, varius tortor quis, ullamcorper orci. Aenean dapibus, metus id iaculis tincidunt, lorem erat maximus quam, quis porta mauris nibh ut risus. Suspendisse potenti. Nulla eget mollis lorem. Mauris fermentum lacus id velit placerat, quis placerat arcu maximus. In hac habitasse platea dictumst. Integer vel ante quis est iaculis faucibus a at neque. Duis velit purus, congue id dictum vitae, laoreet et libero. Integer malesuada eget odio in dapibus. Etiam hendrerit enim et lectus euismod facilisis. Curabitur congue, nisl ac dapibus pulvinar, purus dolor euismod nisi, id aliquet tortor metus eget turpis. Sed semper tempus sapien, et malesuada purus semper sed.</p>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 ">
+          <h2 class="section-heading text-center">Skills</h2>
+          <hr class="primary"><br />
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-group wow bounceIn">
+                <li class="list-group-item"><h4><strong>Advanced</strong></h4></li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">VueJS</li>
+                <li class="list-group-item">AngularJS</li>
+                <li class="list-group-item">jQuery</li>
+                <li class="list-group-item">Bootstrap</li>
+                <li class="list-group-item">Material Design</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-group wow bounceIn">
+                <li class="list-group-item"><h4><strong>Intermediary</strong></h4></li>
+                <li class="list-group-item">C#</li>
+                <li class="list-group-item">ASP .NET Framework/Core</li>
+                <li class="list-group-item">MS SQL</li>
+                <li class="list-group-item">LINQ</li>
+                <li class="list-group-item">Entity Framework</li>
+                <li class="list-group-item">NodeJS</li>
+                <li class="list-group-item">MongoDB</li>
+                <li class="list-group-item">SharePoint</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-group wow bounceIn">
+                <li class="list-group-item"><h4><strong>Beginner</strong></h4></li>
+                <li class="list-group-item">Git</li>
+                <li class="list-group-item">Team Foundation Server</li>
+                <li class="list-group-item">Visual Studio</li>
+                <li class="list-group-item">Amazon Web Services</li>
+                <li class="list-group-item">Azure Cloud Platform</li>
+                <li class="list-group-item">Scrum</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+  </section>
+  <section id="contact">
+    <div class="social">
+      <h2>Contacts</h2>
+      <hr>
+      <br>
+      <div class="contact">
+        <i class="fas fa-mobile fa-1x" aria-hidden="true"></i>
+        &nbsp;&nbsp;<span class="phone" itemprop="phone">+55 71 999538382</span>
+        <br>
+        <i class="fas fa-envelope fa-1x" aria-hidden="true"></i>
+        &nbsp;&nbsp;<a id="email" href="mailto:jopacanario@gmail.com" class="email" itemprop="email">jopacanario@gmail.com</a>
+      </div>
+      <br>
+      <br>
+      <div class="icon">
+        <a itemprop="sameAs" target="_blank" href="https://medium.com/@joaopcanario">
+          <i class="fab fa-medium fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="icon">
+        <a itemprop="sameAs"  target="_blank" href="https://www.github.com/joaopcanario">
+          <i class="fab fa-github-square fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="icon">
+        <a itemprop="sameAs"  target="_blank" href="https://www.twitter.com/joaopcanario">
+          <i class="fab fa-twitter-square fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="icon">
+        <a itemprop="sameAs"  target="_blank" href="https://www.facebook.com/joaopcanario">
+          <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <p></p>
+      <div class="icon">
+        <a itemprop="sameAs"  target="_blank" href="https://plus.google.com/u/0/+Jo%C3%A3oPauloCan%C3%A1rio">
+          <i class="fab fa-google-plus fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="icon">
+        <a itemprop="sameAs"  target="_blank" href="https://br.linkedin.com/in/joaopcanario">
+          <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="icon">
+        <a itemprop="sameAs" target="_blank" href="https://www.instagram.com/joaopcanario">
+          <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="icon">
+        <a itemprop="sameAs" target="_blank" onclick="Skype.tryAnalyzeSkypeUri('chat', '0');" href="skype:jpcanario?chat" />
+        <i class="fab fa-skype fa-3x" aria-hidden="true"></i>
+          </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Vuejs -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
-    <script type="text/javascript" src="assets/js/main.js"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> -->
+  <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 
-    <script type="application/ld+json">
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+  <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Person",
@@ -121,6 +218,6 @@ Federal University of Bahia. Salvador, Brazil">
         "email": "jopacanario@gmail.com",
       }]
     }
-    </script>
+  </script>
 </body>
 </html>

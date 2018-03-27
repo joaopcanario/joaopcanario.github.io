@@ -1,68 +1,234 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background: #4C789B;
+  font-family: 'Roboto Condensed', sans-serif;
+  /*background: #4C789B;*/
+  background: #fefefe;
 }
 
-.profile .photo {
-    text-align: center;
-    padding-top: 8%;
+hr {
+  max-width: 100px;
+  border-color: #f05f40;
+  border-width: 2px;
+  border-radius: 50%;
 }
 
-.profile .photo img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    border: 9px solid rgba(255, 255, 255, 1);
+a {
+  color: #f05f40;
+  text-decoration: none;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
 }
 
-.profile .description {
-    text-align: center;
-    padding-top: 40px;
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.profile .description .name {
-    font-weight: bold;
-    font-size: 24px;
+section {
+  padding: 80px 0;
 }
 
-.profile .description div {
-    font-size: 16px;
+.navbar {
+  width: 100%;
+  background-color: #fefefe;
+  border-color: rgba(34, 34, 34, .05);
 }
 
-.profile .description div .job {
-    font-weight: 50;
+.navbar-brand > img {
+  width: 60px;
+  height: 60px;
+}
+
+#navbarTogglerDemo01 {
+  padding-left: 5%;
+}
+
+#nav-about,
+#nav-skills,
+#nav-projects {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+#navbarTogglerDemo01 ul > li > a:hover,
+#navbarTogglerDemo01 ul > li > a:focus:hover {
+  color: #f05f40;
+}
+
+.navbar-nav {
+  padding-top: 1%;
+  padding-left: 70%;
+}
+
+header {
+  min-height: auto;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header > .header-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+header > .header-content > .header-content-inner > h1 {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+header > .header-content > .header-content-inner > hr {
+  margin: 30px auto;
+}
+
+header > .header-content > .header-content-inner > p {
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media(min-width:768px) {
+  header {
+    min-height: 100%;
+  }
+
+  header > .header-content {
+    position: absolute;
+    top: 50%;
+    padding: 0 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  header > .header-content > .header-content-inner {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+  }
+
+  header > .header-content > .header-content-inner p {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
     font-size: 18px;
-    display: block;
-    color: #fb0;
+  }
 }
 
-.profile .description .email {
-    padding-top: 20px;
-    color: #fb0;
-    font-weight: 90;
-    font-size: 15px;
-    text-decoration: none;
+.btn-orange {
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 300px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #f05f40;
+  display: inline-block;
+  line-height: 1.42857143;
 }
 
-.profile .description .phone {
-    font-size: 15px;
+.btn-orange:hover {
+  background-color: #eb3812;
+  text-decoration: none;
 }
 
-.profile .social {
-    padding-top: 30px;
-    text-align: center;
+.btn-orange span {
+  color: #fefefe;
+}
+
+@media (max-width: 480px) {
+  .btn-orange {
+    font-size: 1.2em;
+  }
+}
+
+.about > p {
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+
+.photo img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(50, 50, 50, 1);
+}
+
+.description {
+  padding-top: 40px;
+}
+
+.degree {
+  padding-right: 5%;
+  padding-left: 5%;
+  display:block;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.description.degree, .description.address {
+  font-size: 16px;
+}
+
+.job {
+  font-weight: 50;
+  font-size: 18px;
+  display: block;
+  color: #f05f40;
+}
+
+.email {
+  padding-top: 20px;
+  color: #333;
+  font-weight: 90;
+  font-size: 15px;
+  text-decoration:none !important;
+  text-decoration:none;
+}
+
+.email:hover {
+  color: #f05f40;
+}
+
+.phone {
+  font-size: 15px;
+}
+
+.social {
+  padding-top: 30px;
 }
 
 .icon {
-    height: 50px;
-    width: 55px;
-    display: inline-block;
+  height: 50px;
+  width: 55px;
+  display: inline-block;
 }
 
-.fa {
-    color:#fff;
+.contact > p {
+  padding: 0px;
 }
 
-.fa:hover {
-    color: #fb0;
+.fab {
+  color:#333;
+}
+
+.fab:hover {
+  color: #f05f40;
 }
