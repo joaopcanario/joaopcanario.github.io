@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav class="border border-bottom navbar fixed-top navbar-expand-lg navbar-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light border-bottom">
     <a class="navbar-brand" href="#">
       <img src="assets/img/brand/new-brand.svg" class="d-inline-block align-top">
     </a>
@@ -37,21 +37,24 @@
       <span class='custom-toggler'><i class="fas fa-bars"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav ml-auto mt-2 mt-rg-0">
         <li class="nav-item">
-          <a id="nav-about" class="nav-link" href="#about">About</a>
+          <a class="nav-link custom-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a id="nav-skills" class="nav-link" href="#publications">Publications</a>
+          <a class="nav-link custom-link" href="#blog">Blog</a>
         </li>
         <li class="nav-item">
-          <a id="nav-skills" class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link custom-link" href="#publications">Publications</a>
         </li>
         <li class="nav-item">
-          <a id="nav-projects" class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link custom-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a id="nav-skills" class="nav-link" href="#resume">Resume</a>
+          <a class="nav-link custom-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#resume">Resume</a>
         </li>
       </ul>
     </div>
@@ -81,6 +84,8 @@
       </div>
     </div>
   </section>
+
+  <!-- About-me -->
   <section id="about">
     <div class="container">
       <h2>About me</h2>
@@ -88,6 +93,25 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non felis porttitor, varius tortor quis, ullamcorper orci. Aenean dapibus, metus id iaculis tincidunt, lorem erat maximus quam, quis porta mauris nibh ut risus. Suspendisse potenti. Nulla eget mollis lorem. Mauris fermentum lacus id velit placerat, quis placerat arcu maximus. In hac habitasse platea dictumst. Integer vel ante quis est iaculis faucibus a at neque. Duis velit purus, congue id dictum vitae, laoreet et libero. Integer malesuada eget odio in dapibus. Etiam hendrerit enim et lectus euismod facilisis. Curabitur congue, nisl ac dapibus pulvinar, purus dolor euismod nisi, id aliquet tortor metus eget turpis. Sed semper tempus sapien, et malesuada purus semper sed.</p>
     </div>
   </section>
+  <!-- About-me -->
+
+  <!-- Blog-->
+  <section id="blog">
+    <div class="container">
+      <h2>My awesome blog posts</h2>
+      <hr>
+      <div class="section-content" id="blogContent">
+        <div class="row" id="jsonContent"></div>
+      </div>
+      <!-- /#blogContent-->
+      <div class="text-center">
+        <a class="btn-orange" id="loadBlogPosts" href="//medium.com/@joaopcanario">
+          <span>All posts</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Blog-->
 
   <section id="publications">
     <div class="container">
@@ -167,38 +191,38 @@
       <br>
       <br>
       <div class="icon">
-        <a itemprop="sameAs" target="_blank" href="https://medium.com/@joaopcanario">
+        <a itemprop="sameAs" target="_blank" href="//medium.com/@joaopcanario">
           <i class="fab fa-medium fa-3x" aria-hidden="true"></i>
         </a>
       </div>
       <div class="icon">
-        <a itemprop="sameAs"  target="_blank" href="https://www.github.com/joaopcanario">
+        <a itemprop="sameAs"  target="_blank" href="//www.github.com/joaopcanario">
           <i class="fab fa-github-square fa-3x" aria-hidden="true"></i>
         </a>
       </div>
       <div class="icon">
-        <a itemprop="sameAs"  target="_blank" href="https://www.twitter.com/joaopcanario">
+        <a itemprop="sameAs"  target="_blank" href="//www.twitter.com/joaopcanario">
           <i class="fab fa-twitter-square fa-3x" aria-hidden="true"></i>
         </a>
       </div>
       <div class="icon">
-        <a itemprop="sameAs"  target="_blank" href="https://www.facebook.com/joaopcanario">
+        <a itemprop="sameAs"  target="_blank" href="//www.facebook.com/joaopcanario">
           <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
         </a>
       </div>
       <p></p>
       <div class="icon">
-        <a itemprop="sameAs"  target="_blank" href="https://plus.google.com/u/0/+Jo%C3%A3oPauloCan%C3%A1rio">
+        <a itemprop="sameAs"  target="_blank" href="//plus.google.com/u/0/+Jo%C3%A3oPauloCan%C3%A1rio">
           <i class="fab fa-google-plus fa-3x" aria-hidden="true"></i>
         </a>
       </div>
       <div class="icon">
-        <a itemprop="sameAs"  target="_blank" href="https://br.linkedin.com/in/joaopcanario">
+        <a itemprop="sameAs"  target="_blank" href="//br.linkedin.com/in/joaopcanario">
           <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
         </a>
       </div>
       <div class="icon">
-        <a itemprop="sameAs" target="_blank" href="https://www.instagram.com/joaopcanario">
+        <a itemprop="sameAs" target="_blank" href="//www.instagram.com/joaopcanario">
           <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
         </a>
       </div>

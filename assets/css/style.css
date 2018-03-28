@@ -29,7 +29,6 @@ a {
 p {
   margin-bottom: 20px;
   font-size: 16px;
-  line-height: 1.5;
 }
 
 section {
@@ -39,6 +38,7 @@ section {
 .navbar-light {
   width: 100%;
   background-color: #fefefe;
+  color: #333;
 }
 
 .navbar-brand > img {
@@ -50,9 +50,7 @@ section {
   padding-left: 5%;
 }
 
-#nav-about,
-#nav-skills,
-#nav-projects {
+#navbarToggler ul > li > a {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
@@ -62,10 +60,6 @@ section {
 #navbarToggler ul > li > a:hover,
 #navbarToggler ul > li > a:focus:hover {
   color: #f05f40;
-}
-
-.navbar-nav {
-  padding-top: 1%;
 }
 
 .navbar-toggler {
@@ -118,13 +112,11 @@ section {
 
 .btn-orange {
   padding: 15px 30px;
-  border: 0;
   border-radius: 300px;
   text-transform: uppercase;
   font-weight: 700;
   background-color: #f05f40;
   display: inline-block;
-  line-height: 1.42857143;
 }
 
 .btn-orange:hover {
@@ -158,7 +150,7 @@ section {
   padding-right: 5%;
   padding-left: 5%;
   padding-top: 3%;
-  display:block;
+  display: block;
 }
 
 .name {
@@ -182,8 +174,8 @@ section {
   color: #333;
   font-weight: 90;
   font-size: 15px;
-  text-decoration:none !important;
-  text-decoration:none;
+  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .email:hover {
@@ -217,37 +209,7 @@ section {
 }
 
 @media(max-width:768px) {
-  #navbarToggler {
-    background-color: transparent;
-  }
-
-  #navbarToggler > li > a,
-  #navbarToggler > li > a:focus {
-    color: rgba(255,255,255,.7);
-  }
-
-  #navbarToggler > li > a:hover,
-  #navbarToggler > li > a:focus:hover {
-    color: #fff;
-  }
-
-  #navbarToggler.affix {
-    border-color: rgba(34,34,34,.05);
-    background-color: #fff;
-  }
-
-  #navbarToggler.affix > li > a,
-  #navbarToggler.affix > li > a:focus {
-    color: #222;
-  }
-
-  #navbarToggler.affix > li > a:hover,
-  #navbarToggler.affix > li > a:focus:hover {
-    color: #f05f40;
-  }
-
   .btn-orange {
     font-size: 1em;
   }
-
 }
