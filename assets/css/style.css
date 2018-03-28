@@ -36,10 +36,9 @@ section {
   padding: 80px 0;
 }
 
-.navbar {
+.navbar-light {
   width: 100%;
   background-color: #fefefe;
-  border-color: rgba(34, 34, 34, .05);
 }
 
 .navbar-brand > img {
@@ -47,7 +46,7 @@ section {
   height: 60px;
 }
 
-#navbarTogglerDemo01 {
+#navbarToggler {
   padding-left: 5%;
 }
 
@@ -60,18 +59,31 @@ section {
   color: #333;
 }
 
-#navbarTogglerDemo01 ul > li > a:hover,
-#navbarTogglerDemo01 ul > li > a:focus:hover {
+#navbarToggler ul > li > a:hover,
+#navbarToggler ul > li > a:focus:hover {
   color: #f05f40;
 }
 
 .navbar-nav {
   padding-top: 1%;
-  padding-left: 70%;
 }
 
-header {
-  min-height: auto;
+.navbar-toggler {
+  display: block;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+
+.custom-toggler {
+  color: #333;
+}
+
+#profile {
+  position: relative;
+  padding-top: 160px;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -79,53 +91,29 @@ header {
   -o-background-size: cover;
 }
 
-header > .header-content {
+#profile > .header-content {
   position: relative;
   width: 100%;
   text-align: center;
 }
 
-header > .header-content > .header-content-inner > h1 {
+#profile > .header-content > .header-content-inner > h1 {
   margin-bottom: 0;
   font-weight: 700;
 }
 
-header > .header-content > .header-content-inner > hr {
+#profile > .header-content > .header-content-inner > hr {
   margin: 30px auto;
 }
 
-header > .header-content > .header-content-inner > p {
+#profile > .header-content > .header-content-inner > p {
   margin-bottom: 50px;
   font-size: 16px;
   font-weight: 300;
 }
 
-@media(min-width:768px) {
-  header {
-    min-height: 100%;
-  }
-
-  header > .header-content {
-    position: absolute;
-    top: 50%;
-    padding: 0 50px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  header > .header-content > .header-content-inner {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1000px;
-  }
-
-  header > .header-content > .header-content-inner p {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 80%;
-    font-size: 18px;
-  }
+.container {
+  padding-top: 5%;
 }
 
 .btn-orange {
@@ -148,12 +136,6 @@ header > .header-content > .header-content-inner > p {
   color: #fefefe;
 }
 
-@media (max-width: 480px) {
-  .btn-orange {
-    font-size: 1.2em;
-  }
-}
-
 .about > p {
   padding-top: 3%;
   padding-left: 5%;
@@ -169,12 +151,13 @@ header > .header-content > .header-content-inner > p {
 }
 
 .description {
-  padding-top: 40px;
+  padding-top: 15px;
 }
 
 .degree {
   padding-right: 5%;
   padding-left: 5%;
+  padding-top: 3%;
   display:block;
 }
 
@@ -231,4 +214,40 @@ header > .header-content > .header-content-inner > p {
 
 .fab:hover {
   color: #f05f40;
+}
+
+@media(max-width:768px) {
+  #navbarToggler {
+    background-color: transparent;
+  }
+
+  #navbarToggler > li > a,
+  #navbarToggler > li > a:focus {
+    color: rgba(255,255,255,.7);
+  }
+
+  #navbarToggler > li > a:hover,
+  #navbarToggler > li > a:focus:hover {
+    color: #fff;
+  }
+
+  #navbarToggler.affix {
+    border-color: rgba(34,34,34,.05);
+    background-color: #fff;
+  }
+
+  #navbarToggler.affix > li > a,
+  #navbarToggler.affix > li > a:focus {
+    color: #222;
+  }
+
+  #navbarToggler.affix > li > a:hover,
+  #navbarToggler.affix > li > a:focus:hover {
+    color: #f05f40;
+  }
+
+  .btn-orange {
+    font-size: 1em;
+  }
+
 }

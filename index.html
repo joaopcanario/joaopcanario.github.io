@@ -29,17 +29,20 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <nav class="border border-bottom navbar fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/brand/new-brand.svg" class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class='custom-toggler'><i class="fas fa-bars"></i></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/brand/new-brand.svg" class="d-inline-block align-top">
-      </a>
+    <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
           <a id="nav-about" class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a id="nav-skills" class="nav-link" href="#publications">Publications</a>
         </li>
         <li class="nav-item">
           <a id="nav-skills" class="nav-link" href="#skills">Skills</a>
@@ -47,10 +50,13 @@
         <li class="nav-item">
           <a id="nav-projects" class="nav-link" href="#projects">Projects</a>
         </li>
+        <li class="nav-item">
+          <a id="nav-skills" class="nav-link" href="#resume">Resume</a>
+        </li>
       </ul>
     </div>
   </nav>
-  <header id="profile">
+  <section id="profile">
     <div class="header-content">
       <div class="header-content-inner">
         <div class="photo">
@@ -58,7 +64,7 @@
         </div>
         <div class="profile">
           <div class="description">
-            <h1><span class="name" itemprop="name">Hello,<br>I'm João Paulo Canário!</span></h1>
+            <h1><span class="name" itemprop="name">Hi, I'm João Paulo Canário!</span></h1>
             <span class="job" itemprop="jobTitle">Software Developer</span>
             <hr>
             <span class="degree" itemprop="degreeTitle">PhD Student in Computer Science at Federal University of Bahia</span>
@@ -74,14 +80,23 @@
         </div>
       </div>
     </div>
-  </header>
+  </section>
   <section id="about">
-    <div class="about">
+    <div class="container">
       <h2>About me</h2>
       <hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non felis porttitor, varius tortor quis, ullamcorper orci. Aenean dapibus, metus id iaculis tincidunt, lorem erat maximus quam, quis porta mauris nibh ut risus. Suspendisse potenti. Nulla eget mollis lorem. Mauris fermentum lacus id velit placerat, quis placerat arcu maximus. In hac habitasse platea dictumst. Integer vel ante quis est iaculis faucibus a at neque. Duis velit purus, congue id dictum vitae, laoreet et libero. Integer malesuada eget odio in dapibus. Etiam hendrerit enim et lectus euismod facilisis. Curabitur congue, nisl ac dapibus pulvinar, purus dolor euismod nisi, id aliquet tortor metus eget turpis. Sed semper tempus sapien, et malesuada purus semper sed.</p>
     </div>
   </section>
+
+  <section id="publications">
+    <div class="container">
+      <h2>Publications</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non felis porttitor, varius tortor quis, ullamcorper orci. Aenean dapibus, metus id iaculis tincidunt, lorem erat maximus quam, quis porta mauris nibh ut risus. Suspendisse potenti. Nulla eget mollis lorem. Mauris fermentum lacus id velit placerat, quis placerat arcu maximus. In hac habitasse platea dictumst. Integer vel ante quis est iaculis faucibus a at neque. Duis velit purus, congue id dictum vitae, laoreet et libero. Integer malesuada eget odio in dapibus. Etiam hendrerit enim et lectus euismod facilisis. Curabitur congue, nisl ac dapibus pulvinar, purus dolor euismod nisi, id aliquet tortor metus eget turpis. Sed semper tempus sapien, et malesuada purus semper sed.</p>
+    </div>
+  </section>
+
   <section id="skills">
     <div class="container">
       <div class="row">
@@ -132,10 +147,13 @@
     </div>
   </section>
   <section id="projects">
-    <h2>Projects</h2>
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non felis porttitor, varius tortor quis, ullamcorper orci. Aenean dapibus, metus id iaculis tincidunt, lorem erat maximus quam, quis porta mauris nibh ut risus. Suspendisse potenti. Nulla eget mollis lorem. Mauris fermentum lacus id velit placerat, quis placerat arcu maximus. In hac habitasse platea dictumst. Integer vel ante quis est iaculis faucibus a at neque. Duis velit purus, congue id dictum vitae, laoreet et libero. Integer malesuada eget odio in dapibus. Etiam hendrerit enim et lectus euismod facilisis. Curabitur congue, nisl ac dapibus pulvinar, purus dolor euismod nisi, id aliquet tortor metus eget turpis. Sed semper tempus sapien, et malesuada purus semper sed.</p>
+    </div>
   </section>
   <section id="contact">
-    <div class="social">
+    <div class="container social">
       <h2>Contacts</h2>
       <hr>
       <br>
