@@ -208,10 +208,6 @@ section {
   color: #f05f40;
 }
 
-.card {
-  /*padding: 5%;*/
-}
-
 .card-img-overlay {
   padding: 2%;
   width: 65px;
@@ -223,12 +219,4 @@ section {
   .btn-orange {
     font-size: 1em;
   }
-
-  /*.card {
-
-  }*/
-
-  /*p .card-text {
-    padding-top: 1px;
-  }*/
 }
