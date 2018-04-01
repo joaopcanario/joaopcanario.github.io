@@ -215,8 +215,137 @@ section {
   background: white;
 }
 
-@media(max-width:768px) {
+#heart {
+  color: red;
+}
+
+.main-timeline {
+  overflow: hidden;
+  position: relative;
+}
+
+.main-timeline .timeline { position: relative; }
+ 
+.main-timeline .timeline:before,
+.main-timeline .timeline:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.main-timeline .timeline:before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f05f40;
+  box-sizing: content-box;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  bottom: 0;
+  right: 0;
+}
+
+.main-timeline .timeline-icon {
+  width: 3px;
+  height: 100%;
+  background: #f05f40;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.main-timeline .timeline-icon:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: #f05f40;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  left: -6px;
+  bottom: 0;
+}
+
+.main-timeline .timeline-content {
+  width: 50%;
+  padding: 30px 40px 30px 80px;
+}
+
+.main-timeline .timeline-content > .card {
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+
+.main-timeline .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f05f40;
+  text-align: center;
+}
+
+.main-timeline .card-title {
+  margin-bottom: 0;
+  height: 30px;
+}
+
+.main-timeline .card-title > a {
+  text-decoration: none;
+}
+
+.main-timeline .card-title > a:hover,
+.main-timeline .card-title > a:focus:hover {
+  color: #f05f40;
+}
+
+.main-timeline .card-title > a > span:hover,
+.main-timeline .card-title > a > span:focus:hover {
+  color: #000;
+}
+
+.main-timeline .description {
+  font-size: 14px;
+  color: #959595;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 0;
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-icon {
+  left: 50%;
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+  float: right;
+  padding: 30px 80px 30px 40px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .main-timeline .timeline-icon,
+  .main-timeline .timeline:nth-child(2n) .timeline-icon {
+    height: 100%;
+    width: 3px;
+    left: 3px;
+    transform: translateX(0);
+  }
+
+  .main-timeline .timeline-content,
+  .main-timeline .timeline:nth-child(2n) .timeline-content {
+    float: none;
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+  }
+
   .btn-orange {
     font-size: 1em;
+  }
+
+  .list-group {
+    padding-top: 5%;
   }
 }

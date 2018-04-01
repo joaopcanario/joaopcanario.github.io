@@ -14,7 +14,7 @@ $(document).ready(function () {
 });
 
 $(function () {
-  const $content = $('#jsonContent');
+  const $content = $('#blogContent');
   const data = {
     rss_url: 'https://medium.com/feed/@joaopcanario'
   };
@@ -57,4 +57,8 @@ $(function () {
       $content.html(output);
     }
   });
+});
+
+$(function () {
+
 });
