@@ -106,6 +106,12 @@ section {
   font-weight: 300;
 }
 
+@media (max-height: 740px) {
+  #profile {
+    padding-top: 120px;
+  }
+}
+
 .container {
   padding-top: 5%;
 }
@@ -140,6 +146,20 @@ section {
   width: 300px;
   height: 300px;
   border: 1px solid rgba(50, 50, 50, 1);
+}
+
+@media (max-width: 375px) and (max-height: 670px) {
+  .photo img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 320px) and (max-height: 570px) {
+  .photo img {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 .description {
@@ -312,7 +332,6 @@ section {
   color: #959595;
   line-height: 24px;
   margin: 0;
-  padding-top: 0;
 }
 
 .main-timeline .timeline:nth-child(2n) .timeline-icon {
@@ -324,7 +343,7 @@ section {
   padding: 30px 80px 30px 40px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   .main-timeline .timeline-icon,
   .main-timeline .timeline:nth-child(2n) .timeline-icon {
