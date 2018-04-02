@@ -12,3 +12,15 @@ $(document).ready(function () {
    }
  });
 });
+
+$(".scroll").click(function(event){
+  event.preventDefault();
+
+  //calculate destination place
+  const top = $(this.hash).offset().top;
+  const height = $(document).height() - $(window).height();
+  const destination = (top > height) ? height : top;
+
+  //go to destination
+  $('html,body').animate({scrollTop: destination}, 1000,'swing');
+});
