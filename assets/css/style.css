@@ -35,6 +35,10 @@ section {
   padding: 80px 0;
 }
 
+#navbarToggler ul > li > a.custom {
+  color: #f05f40;
+}
+
 .navbar-light {
   width: 100%;
   background-color: #fefefe;
