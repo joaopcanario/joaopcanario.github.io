@@ -1,6 +1,6 @@
-const advanced = ["Python", "Visão Computacional", "Machine Learning", "Deep Learning", "OpenCV", "Scikit-Learn", "Git"];
-const intermediary = ["Keras / Tensor Flow", "Numpy", "Pandas", "Django", "Flask", "REST API", "Java"];
-const beginner = ["Docker", "TDD", "HTML / CSS / JS", "jQuery", "NodeJS", "VueJS", "ReactJS", "MongoDB"];
+const advanced = ["Python", "Computer Vision", "Machine Learning", "Deep Learning", "Pattern Recognition"];
+const intermediary = ["Django", "Flask", "Java", "Keras / Tensor Flow", "Pandas"];
+const beginner = ["Docker", "HTML / CSS / JS", "jQuery", "ReactJS", "MongoDB"];
 
 $(function () {
   const $content = $('#skillsContent');
