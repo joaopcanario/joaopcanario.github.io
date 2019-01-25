@@ -1,4 +1,4 @@
-const projects = [
+var projects = [
   {
     "name": "Imports",
     "url": "https://github.com/joaopcanario/imports",
