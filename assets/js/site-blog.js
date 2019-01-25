@@ -7,8 +7,10 @@ $(function () {
   $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
     if (response.status == 'ok') {
       let output = '';
+      let k = 0;
 
-      $.each(response.items, function (k, item) {
+      Object.keys(response.items).forEach(function (key) {
+        item = response.items[key]
 
         if (item.categories.length > 0) {
           const border = ($(window).width() < 768) ? `border-0` : ``;
@@ -35,6 +37,7 @@ $(function () {
           output += `<div class="card-img-overlay"><h5 class="card-title">${pubDate}</h5></div>`;
           output += '</div></div></div>';
 
+          k++;
           return k <= 2;
         }
       });
