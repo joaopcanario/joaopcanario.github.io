@@ -1,6 +1,6 @@
-const advanced = ["Python", "Computer Vision", "Machine Learning", "Deep Learning", "Pattern Recognition"];
-const intermediary = ["Django", "Flask", "Java", "Keras / Tensor Flow", "Pandas"];
-const beginner = ["Docker", "HTML / CSS / JS", "jQuery", "ReactJS", "MongoDB"];
+const advanced = ["Python", "Computer Vision", "Machine Learning", "Deep Learning", "Pattern Recognition", "Pandas", "NumPy", "..."];
+const intermediary = ["Celery", "Docker", "Flask", "FastAPI", "PyTorch", "Keras", "TensorFlow", "..."];
+const beginner = ["HTML", "CSS", "Javascript", "Vue.js", "jQuery", "-", "-", "..."];
 
 $(function () {
   const $content = $('#skillsContent');
